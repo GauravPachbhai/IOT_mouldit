@@ -28,7 +28,7 @@ mongoose
 
 app.use("/api/devices", deviceRoutes);
 
-app.get("/", (req, res) => res.json({ status: "ok" }));
+app.post("/", (req, res) => res.json({ status: "ok" }));
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
